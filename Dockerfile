@@ -29,10 +29,10 @@ RUN useradd -m steam
 
 ENV SERVERPATH "/server/ark"
 
-COPY ark_start.sh .
+COPY ark_start.sh /server
 RUN chmod +x ark_start.sh
 
-COPY GameUserSettings.ini .
+COPY GameUserSettings.ini /server
 
 
 #Expose the port
