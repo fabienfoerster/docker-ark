@@ -37,7 +37,7 @@ ADD GameUserSettings.ini .
 
 #Expose the port
 
-EXPOSE 7778/udp
+EXPOSE 34777/udp
 EXPOSE 27015/udp
 
 
