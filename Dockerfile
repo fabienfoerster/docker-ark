@@ -25,7 +25,6 @@ RUN echo "session required pam_limits.so" >> /etc/pam.d/common-session
 #Install game
 RUN mkdir -p /server/ark
 WORKDIR /server
-RUN useradd -m steam
 
 ENV SERVERPATH "/server/ark"
 
