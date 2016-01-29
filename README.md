@@ -17,7 +17,7 @@ Tested on Linux (Ubuntu 14.04)  and Synology DSM 5.2-5644
 ## Usage
 - run ``docker pull fabienfoerster/ark-server``
 - create a folder to store the server files with enough space (i.e. /data/ark/)
-- run ``docker run -d -e ARK_SERVER_NAME=serverName -e ARK_SERVER_PASSWORD=password -e ARK_SERVER_ADMIN_PASSWORD=adminPassword -e ARK_SERVER_PORT=serverPort -e ARK_SERVER_QUERYPORT=serverQueryport -e ARK_MAX_PLAYER=10 -v /data/ark:/server/ark  fabienfoerster/ark-server``
+- run ``docker run -d -e ARK_SERVER_NAME=serverName -e ARK_SERVER_PASSWORD=password -e ARK_SERVER_ADMIN_PASSWORD=adminPassword -e ARK_SERVER_PORT=serverPort -e ARK_SERVER_QUERYPORT=serverQueryport -e ARK_MAX_PLAYER=10 -v /data/ark:/server/ark -p 7778:7778/udp -p 27015:27015/udp fabienfoerster/ark-server``
 
 ## Issues
 
