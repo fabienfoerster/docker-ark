@@ -13,8 +13,23 @@ then
 fi
 
 
-if [ "$UPDATE_SERVER" = "true"]
+if [ "$UPDATE_SERVER" = "true" ]
 then
+  echo -e "Backups save files before updating ..."
+  SAVEDIR=${SERVERPATH}/ShooterGame/Saved/SavedArks
+  BACKUPDIR=${SERVERPATH}/ShooterGame/Saved/BackupArks
+
+  #Create backup folder if it doesnt exist
+  mkdir -p ${SAVEDIR}
+  #Remove old backup
+  rm ${SAVEDIR}/*
+  #Copy all profile files
+  cp `ls ${DIR}/*.arkprofile ` ${SAVEDIR}
+  #Copy all tribe files
+  cp `ls ${DIR}/*.arktribe` ${SAVEDIR}
+  #Copy last game state
+  cp `ls -1 ${DIR}/*.ark | tail -3` ${SAVEDIR}
+
   echo -e "Updating Ark server ...."
   /steamcmd/steamcmd.sh +login anonymous +force_install_dir ${SERVERPATH} +app_update 376030 +quit
 fi

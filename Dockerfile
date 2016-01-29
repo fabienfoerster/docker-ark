@@ -31,11 +31,8 @@ ENV SERVERPATH "/server/ark"
 COPY ark_start.sh ./
 RUN chmod +x ark_start.sh
 
-COPY GameUserSettings.ini ./
-
 
 #Expose the port
-
 EXPOSE 34777/udp
 EXPOSE 27015/udp
 
