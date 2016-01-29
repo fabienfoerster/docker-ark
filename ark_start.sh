@@ -20,15 +20,15 @@ then
   BACKUPDIR=${SERVERPATH}/ShooterGame/Saved/BackupArks
 
   #Create backup folder if it doesnt exist
-  mkdir -p ${SAVEDIR}
+  mkdir -p ${BACKUPDIR}
   #Remove old backup
-  rm ${SAVEDIR}/*
+  rm ${BACKUPDIR}/*
   #Copy all profile files
-  cp `ls ${DIR}/*.arkprofile ` ${SAVEDIR}
+  cp `ls ${SAVEDIR}/*.arkprofile ` ${BACKUPDIR}
   #Copy all tribe files
-  cp `ls ${DIR}/*.arktribe` ${SAVEDIR}
+  cp `ls ${SAVEDIR}/*.arktribe` ${BACKUPDIR}
   #Copy last game state
-  cp `ls -1 ${DIR}/*.ark | tail -3` ${SAVEDIR}
+  cp `ls -1 ${SAVEDIR}/*.ark | tail -3` ${BACKUPDIR}
 
   echo -e "Updating Ark server ...."
   /steamcmd/steamcmd.sh +login anonymous +force_install_dir ${SERVERPATH} +app_update 376030 +quit
