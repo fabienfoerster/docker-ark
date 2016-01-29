@@ -30,6 +30,9 @@ then
   #Copy last game state
   cp `ls -1 ${SAVEDIR}/*.ark | tail -3` ${BACKUPDIR}
 
+  #Force copy of TheIsland.ark
+  cp ${SAVEDIR}/TheIsland.ark ${BACKUPDIR}
+
   echo -e "Updating Ark server ...."
   /steamcmd/steamcmd.sh +login anonymous +force_install_dir ${SERVERPATH} +app_update 376030 +quit
 fi
