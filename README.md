@@ -21,8 +21,5 @@ Tested on Linux (Ubuntu 14.04)  and Synology DSM 5.2-5644
 
 ## Issues
 
-- Server settings should be described in a GameUserSettings.ini but Synology DSM do not seem to aknowledge this file.
+- Server settings should be described in a GameUserSettings.ini but Synology DSM do not seem to aknowledge this file. It doesn't acknowledge some properties in the file.
 
-## Todo
-- force it to use GameUserSettings.ini
-- I don't know it work pretty well
