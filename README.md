@@ -6,7 +6,7 @@ Tested on Linux (Ubuntu 14.04)  and Synology DSM 5.2-5644
 
 - Easy install
 - Easy to use
-- Automatic backup before server update (soon)
+- Automatic backup before server update
 - Work well with synology
 
 ## Requirements
