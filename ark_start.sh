@@ -41,4 +41,6 @@ fi
 
 #Lauch the game server
 echo -e "Lauching Ark Server ...."
-${SERVERPATH}/ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?SessionName=${ARK_SERVER_NAME:=[FR]Brookie-Ark}?ServerPassword=${ARK_SERVER_PASSWORD:=ark}?ServerAdminPassword=${ARK_SERVER_ADMIN_PASSWORD:=admin}?Port=${ARK_SERVER_PORT:=7777}?QueryPort=${ARK_SERVER_QUERYPORT:=27015}?allowThirdPersonPlayer=${ARK_BOOLEAN:=true}?alwaysNotifyPlayerLeft=${ARK_BOOLEAN:=true}?alwaysNotifyPlayerJoined=${ARK_BOOLEAN:=true}?serverPVE=${ARK_BOOLEAN:=true}?MaxPlayers=${ARK_MAX_PLAYER:=10} -nosteamclient -game -server -log
+${SERVERPATH}/ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?SessionName=${ARK_SERVER_NAME:=[FR]Brookie-Ark}?ServerPassword=${ARK_SERVER_PASSWORD:=ark}?ServerAdminPassword=${ARK_SERVER_ADMIN_PASSWORD:=admin}?Port=${ARK_SERVER_PORT:=7777}?QueryPort=${ARK_SERVER_QUERYPORT:=27015}?allowThirdPersonPlayer=${ARK_BOOLEAN:=true}?alwaysNotifyPlayerLeft=${ARK_BOOLEAN:=true}?alwaysNotifyPlayerJoined=${ARK_BOOLEAN:=true}?serverPVE=${ARK_BOOLEAN:=true}?MaxPlayers=${ARK_MAX_PLAYER:=10} -NoBattlEye -crossplay -nosteamclient -game -server -log
+echo -e "Server started !"
+
