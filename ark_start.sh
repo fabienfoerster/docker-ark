@@ -4,7 +4,7 @@
 if [ ! "$(ls -A ${SERVERPATH})" ]
 then
   echo -e "Installing Ark server ... \n"
-  /steamcmd/steamcmd.sh +login anonymous +force_install_dir ${SERVERPATH} +app_update 376030 +quit
+  steamcmd +login anonymous +force_install_dir ${SERVERPATH} +app_update 376030 +quit
 
   #copy the GameUserSettings.ini file
   echo -e "Copying GameUserSettings.ini file ... \n"
@@ -34,7 +34,7 @@ then
   cp ${SAVEDIR}/TheIsland.ark ${BACKUPDIR}
 
   echo -e "Updating Ark server ...."
-  /steamcmd/steamcmd.sh +login anonymous +force_install_dir ${SERVERPATH} +app_update 376030 +quit
+  steamcmd +login anonymous +force_install_dir ${SERVERPATH} +app_update 376030 +quit
 fi
 
 
