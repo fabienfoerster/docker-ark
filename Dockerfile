@@ -8,10 +8,7 @@ RUN apt-get -y update
 RUN apt-get -y install lib32gcc1 wget
 
 # Install steamcmd
-RUN mkdir -p /steamcmd
-WORKDIR /steamcmd
-RUN wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
-RUN tar -xvzf steamcmd_linux.tar.gz
+RUN sudo apt-get install steamcmd
 
 # Open file limit
 RUN echo "fs.file-max=100000" >> /etc/sysctl.conf
